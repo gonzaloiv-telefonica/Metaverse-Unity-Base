@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace Meta.Panels
+namespace Meta.Global
 {
 
     public class SimpleCameraController : MonoBehaviour

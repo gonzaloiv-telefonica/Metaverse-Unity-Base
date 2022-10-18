@@ -5,7 +5,7 @@ using Meta.Global.MonoSingleton;
 using DG.Tweening;
 using UnityEngine.UI;
 using System;
-using Meta.Panels;
+using Meta.Global;
 using Oculus.Avatar2;
 using MEC;
 
