@@ -48,12 +48,6 @@ namespace Meta.ShopifyStore
             go.transform.position = spawnPoint.position;
             go.transform.rotation = spawnPoint.rotation;
             go.transform.localScale = go.transform.localScale / 100;
-            MeshRenderer rend = go.transform.GetComponentInChildren<MeshRenderer>();
-            Assert.IsNotNull(rend, "GameObject must have a MeshRenderer!");
-            MeshCollider col = rend.gameObject.AddComponent<MeshCollider>();
-            col.convex = true;
-            rend.gameObject.AddComponent<Rigidbody>();
-            rend.gameObject.AddComponent<OVRGrabbable>();
             gos.Add(go);
         }
 
