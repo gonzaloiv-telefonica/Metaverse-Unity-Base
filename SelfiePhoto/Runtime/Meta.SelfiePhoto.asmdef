@@ -1,0 +1,25 @@
+{
+    "name": "Meta.SelfiePhotos",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5048b4c87ef55914b9b0c6900df7bd8f",
+        "GUID:b47e40ab5d617e24989e362542a01644",
+        "GUID:cfe3f7b58f8481e44957756f0ab67de3",
+        "GUID:ca4a6bcfe45d4ba458cee312091505ad",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:1f121b3219300f340964a70dc507c3da",
+        "GUID:729ee54e007246848870b48c14e0d775",
+        "GUID:c16a2888a176d8f499f48763322f9c44",
+        "GUID:029025e1205b66b4c8a934409337eed0",
+        "GUID:002b08e873fdb4b148abcbf985765328"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
