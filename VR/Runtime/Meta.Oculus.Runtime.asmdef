@@ -1,0 +1,26 @@
+{
+    "name": "Meta.Oculus.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:328a1f7ab25781e4a92f8be1c2034468",
+        "GUID:1f121b3219300f340964a70dc507c3da",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:260d21a6a27f3f84c86688dc9ace05c7",
+        "GUID:9be4e99f4dd005d43a97f52d77f04eff",
+        "GUID:b331784f71531f64ebbeed17539b6c2f",
+        "GUID:c16a2888a176d8f499f48763322f9c44",
+        "GUID:64a5e78bc3a487e4785840abcc411b13",
+        "GUID:10ccfe6c35e29e14798a0c711aa976a0",
+        "GUID:2a6007f45388a5d4caac6644c79731a9",
+        "GUID:fa0c43989cd4ea0419c323a6e32e6c3a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
