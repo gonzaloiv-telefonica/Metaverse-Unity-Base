@@ -1,0 +1,18 @@
+{
+    "name": "Meta.FileAccess.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b47e40ab5d617e24989e362542a01644",
+        "GUID:92afa4926261d2642a5816b505863ab5",
+        "GUID:9be4e99f4dd005d43a97f52d77f04eff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

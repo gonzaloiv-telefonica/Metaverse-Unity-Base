@@ -1,0 +1,17 @@
+{
+    "name": "Meta.DataAccess.Postman",
+    "rootNamespace": "",
+    "references": [
+        "GUID:92afa4926261d2642a5816b505863ab5",
+        "GUID:402f68be1c64c6f46bbd77b86f2481c1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

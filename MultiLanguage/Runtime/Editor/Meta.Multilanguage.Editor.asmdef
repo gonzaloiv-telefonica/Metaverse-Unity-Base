@@ -1,0 +1,18 @@
+{
+    "name": "Meta.Multilanguage.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:56fe931e9de564b4689f4dcafdacfd71"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

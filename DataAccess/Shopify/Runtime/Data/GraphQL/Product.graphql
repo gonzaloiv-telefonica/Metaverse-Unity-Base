@@ -1,0 +1,53 @@
+query GetProducts($limit: Int!) {
+  products(first: $limit) {
+    edges {
+      node {
+        id
+        title
+        description
+        handle
+        createdAt
+        updatedAt
+        media(first: 10) {
+          edges {
+            node {
+              mediaContentType
+              alt
+              ...mediaFieldsByType
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment mediaFieldsByType on Media {
+    ... on ExternalVideo {
+        id
+        host
+        embeddedUrl
+    }
+    ... on MediaImage {
+        image {
+            originalSrc
+        }
+    }
+    ... on Model3d {
+        sources {
+            url
+            mimeType
+            format
+            filesize
+        }
+    }
+    ... on Video {
+        sources {
+            url
+            mimeType
+            format
+            height
+            width
+        }
+    }
+}

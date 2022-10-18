@@ -1,0 +1,24 @@
+{
+    "name": "Meta.Shopify.Tests.EditMode",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:402f68be1c64c6f46bbd77b86f2481c1",
+        "GUID:cea539261cf2f8349b2fdd1b18daf952",
+        "GUID:a44c6167d1c6b4047b53002727d4697e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

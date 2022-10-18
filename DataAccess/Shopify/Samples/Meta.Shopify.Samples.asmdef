@@ -1,0 +1,25 @@
+{
+    "name": "Meta.Shopify.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:402f68be1c64c6f46bbd77b86f2481c1",
+        "GUID:cea539261cf2f8349b2fdd1b18daf952",
+        "GUID:a44c6167d1c6b4047b53002727d4697e",
+        "GUID:65917f6bc12bb4a4cad49ea83a119a2b",
+        "GUID:d9c4a3993822f42439e43ee7d2d1f243",
+        "GUID:c16a2888a176d8f499f48763322f9c44"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

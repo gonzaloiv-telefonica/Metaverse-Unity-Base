@@ -1,0 +1,17 @@
+{
+    "name": "Meta.Audio.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c16a2888a176d8f499f48763322f9c44",
+        "GUID:9be4e99f4dd005d43a97f52d77f04eff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

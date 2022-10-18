@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf2db7c168d64e6d9730559f5f9b530, type: 3}
+  m_Name: MultiLanguage_Dictionary_TestMultiLanguajeScene
+  m_EditorClassIdentifier: 
+  urlLanguageService: 
+  versionNumber: 0
+  listTraslation:
+  - textId: ^selfie
+    translations:
+    - language: 0
+      translatedText: Selfie
+    - language: 1
+      translatedText: Selfie
+    - language: 2
+      translatedText: Selfie
+    - language: 3
+      translatedText: Selfie
+    - language: 4
+      translatedText: Selfie
+  - textId: ^galeria
+    translations:
+    - language: 0
+      translatedText: Galeria
+    - language: 1
+      translatedText: Gallery
+    - language: 2
+      translatedText: Gallery
+    - language: 3
+      translatedText: Gallery
+    - language: 4
+      translatedText: Gallery
+  - textId: ^home
+    translations:
+    - language: 0
+      translatedText: Menu
+    - language: 1
+      translatedText: Menu
+    - language: 2
+      translatedText: Menu
+    - language: 3
+      translatedText: Menu
+    - language: 4
+      translatedText: Menu
