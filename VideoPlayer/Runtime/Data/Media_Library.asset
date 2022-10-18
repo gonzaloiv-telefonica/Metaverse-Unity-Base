@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40445ec1f2249ad9f291773025030a, type: 3}
+  m_Name: Media_Library
+  m_EditorClassIdentifier: 
+  mediaLibrary:
+  - id: 0
+    is360: 0
+    url: https://metaversetelefonica.blob.core.windows.net/meta-flashships/videos/20220719_Avatar_AltspaceVR_MAC.mp4
+    videoClip: {fileID: 0}
+    size: {x: 1728, y: 1118}
+    loop: 0
+    playOnAwake: 1
+    showMediaPlayer: 1
+    renderMode: 2
+    aspectRatio: 2
+  - id: 1
+    is360: 0
+    url: https://metaversetelefonica.blob.core.windows.net/meta-flashships/videos/video_demo_oculus_ordenador.mp4
+    videoClip: {fileID: 0}
+    size: {x: 1024, y: 576}
+    loop: 0
+    playOnAwake: 1
+    showMediaPlayer: 1
+    renderMode: 3
+    aspectRatio: 2
+  - id: 2
+    is360: 1
+    url: https://metaversetelefonica.blob.core.windows.net/meta-flashships/videos360/LOS%20MALLOS%20DE%20RIGLOS%20VISITA%20360%20CON%20AUDIO%20AAC%20Y%20H264.mp4
+    videoClip: {fileID: 0}
+    size: {x: 0, y: 0}
+    loop: 0
+    playOnAwake: 1
+    showMediaPlayer: 1
+    renderMode: 3
+    aspectRatio: 2
+  - id: 3
+    is360: 1
+    url: https://metaversetelefonica.blob.core.windows.net/meta-flashships/videos360/Video_nuevo_procesado.mp4
+    videoClip: {fileID: 0}
+    size: {x: 0, y: 0}
+    loop: 0
+    playOnAwake: 0
+    showMediaPlayer: 1
+    renderMode: 3
+    aspectRatio: 2
