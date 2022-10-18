@@ -1,0 +1,16 @@
+{
+    "name": "Meta.Analytics.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "Unity3dAzure.UnityApplicationInsights"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
