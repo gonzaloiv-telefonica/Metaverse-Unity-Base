@@ -20,7 +20,6 @@ namespace Meta.VR
 
         private const float DefaultCharacterRadius = 0.2f;
         private const float SelfieCharacterRadius = 1.2f;
-        private const float MinMoveMs = 0.01f;
 
         [SerializeField] private OVRPlayerController playerController;
         [SerializeField] private CharacterController characterController;
@@ -130,11 +129,7 @@ namespace Meta.VR
                 .Append(FadeIn(secs / 3))
                 .AppendInterval(secs / 3)
                 .Append(FadeOut(secs / 3))
-                .AppendCallback(() =>
-                {
-                    if (onComplete != null)
-                        onComplete();
-                });
+                .AppendCallback(() => onComplete?.Invoke());
         }
 
         public static void SetWorldPose(Pose pose)

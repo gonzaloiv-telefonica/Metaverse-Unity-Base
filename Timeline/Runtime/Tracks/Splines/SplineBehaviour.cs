@@ -68,7 +68,7 @@ namespace Meta.Timeline
                 {
                     //Traslación
                     int currentIndex = Mathf.FloorToInt(pathPoints.Length * globalPercentage);
-                    if (currentIndex <= 0 || currentIndex >= pathPoints.Length - 1)
+                    if (currentIndex <= 0 || currentIndex >= pathPoints.Length)
                         return;
                     Vector3 destination = loop && currentIndex == pathPoints.Length - 2 ? pathPoints[0] : pathPoints[currentIndex + 1];
                     Vector3 origin = pathPoints[currentIndex];
