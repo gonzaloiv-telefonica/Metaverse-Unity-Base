@@ -39,6 +39,7 @@ namespace Meta.VR
         public static string PlatformId => Instance.id;
         public static bool IsAvatarInit => !string.IsNullOrEmpty(Instance.id);
         private static Color TransparentColor => new Color(Instance.fadeColor.r, Instance.fadeColor.g, Instance.fadeColor.b, 0);
+        public static Transform Body => Instance.playerController.transform;
         public static Transform MaskPoint
         {
             get
