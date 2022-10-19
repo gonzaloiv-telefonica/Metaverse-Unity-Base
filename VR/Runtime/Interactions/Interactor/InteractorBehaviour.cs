@@ -48,9 +48,9 @@ namespace Meta.VR
                 onPrimaryClick.Invoke();
             if (OVRInput.GetUp(firstButtonCode) || Input.GetMouseButtonUp(0))
                 onPrimaryUnclick.Invoke();
-            if (OVRInput.GetDown(secondButtonCode) || Input.GetMouseButtonDown(1))
+            if (OVRInput.GetDown(secondButtonCode) || Input.GetKeyDown(KeyCode.LeftAlt))
                 onSecondaryClick.Invoke(this);
-            if (OVRInput.GetUp(secondButtonCode) || Input.GetMouseButtonUp(1))
+            if (OVRInput.GetUp(secondButtonCode) || Input.GetKeyUp(KeyCode.LeftAlt))
                 onSecondaryUnclick.Invoke(this);
         }
 
@@ -178,6 +178,16 @@ namespace Meta.VR
             List<InteractorBehaviour> result = new List<InteractorBehaviour>();
             interactors.ForEach(interactor => result.Add(interactor));
             return result;
+        }
+
+        public static OVRInput.Controller ToOVRController(this Hand hand)
+        {
+            return hand switch
+            {
+                Hand.Left => OVRInput.Controller.LTouch,
+                Hand.Right => OVRInput.Controller.RTouch,
+                _ => OVRInput.Controller.None,
+            };
         }
 
     }
