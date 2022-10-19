@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Meta.DataAccess
 {
 
-    public class PostmanCustomerService : IService<Customer>, IRestDao
+    public class PostmanCustomerService : IService<Customer>, IRestService
     {
 
         protected IRestClient client;

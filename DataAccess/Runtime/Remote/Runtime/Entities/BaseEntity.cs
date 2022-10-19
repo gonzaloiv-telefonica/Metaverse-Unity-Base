@@ -14,7 +14,6 @@ namespace Meta.DataAccess
         public string id;
         public string createdAt;
         public string updatedAt;
-        public string Id => id;
     }
 
 }

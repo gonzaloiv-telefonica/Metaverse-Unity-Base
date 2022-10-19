@@ -5,9 +5,10 @@ using UnityEngine;
 namespace Meta.DataAccess
 {
 
-    public interface IRestDao
+    [System.Serializable]
+    public class Counter : IEntity
     {
-        string Uri { get; }
+        public int value;
     }
 
 }
