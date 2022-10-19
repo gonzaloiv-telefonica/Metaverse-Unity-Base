@@ -16,7 +16,12 @@ namespace Meta.Analytics
 
         public AnalyticsEvent()
         {
-            this.labels = new Dictionary<string, string>();
+            labels = new Dictionary<string, string>();
+        }
+
+        public AnalyticsEvent(string key)
+        {
+            this.key = key;
         }
 
         public bool HasLabel(string key)
