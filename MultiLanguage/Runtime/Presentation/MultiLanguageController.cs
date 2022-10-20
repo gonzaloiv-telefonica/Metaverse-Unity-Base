@@ -2,32 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using Meta.Global.MonoSingleton;
 
 namespace Meta.MultiLanguage
 {
-    public class MultiLanguageController : MonoSingleton<MultiLanguageController>
+
+    public class MultiLanguageController : MonoBehaviour
     {
 
-        private static Language DefaultLang = Language.ES;
+        private static MultiLanguageController instance;
+        public static MultiLanguageController Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = FindObjectOfType<MultiLanguageController>();
+                    instance.Init();
+                }
+                return instance;
+            }
+        }
 
         #region EVENTS
+
         public delegate void LanguageChange(Language newLanguage);
         public static event LanguageChange OnLanguageChanged;
+
         #endregion
 
         #region CONST
+
+        private static Language DefaultLang = Language.ES;
         private const string GAME_LANG = "game_language";
+
         #endregion
 
         #region PRIVATE VARS
 
         private List<LocalizedText> listTraslation;
-        [SerializeField]
-        private Language gameLang = Language.ES;
+        [SerializeField] private Language gameLang = Language.ES;
         private string noTranslationText = "Translation missing for {0}";
-        [SerializeField]
-        private List<MultiLanguageDictionary> dictionaries;
+        [SerializeField] private List<MultiLanguageDictionary> dictionaries;
         private List<Language> availableLangs;
 
         #endregion
@@ -103,7 +118,7 @@ namespace Meta.MultiLanguage
         }
 
 
-        protected override void Init()
+        protected void Init()
         {
             availableLangs = new List<Language>();
             listTraslation = new List<LocalizedText>();
@@ -138,8 +153,8 @@ namespace Meta.MultiLanguage
             {
                 setLanguage(lang);
             }
-            catch(Exception e)
-            {   
+            catch (Exception e)
+            {
                 Debug.LogWarning(e.ToString());
                 setLanguage(DefaultLang);
             }
@@ -169,7 +184,7 @@ namespace Meta.MultiLanguage
             setLanguage(gameLang);
         }
 
-        void OnDestroy()
+        private void OnDestroy()
         {
             try
             {
@@ -177,9 +192,11 @@ namespace Meta.MultiLanguage
             }
             catch (Exception e)
             {
-                Debug.LogError("No listener active " +  e.ToString());
+                Debug.LogError("No listener active " + e.ToString());
             }
 
         }
+
     }
+
 }
