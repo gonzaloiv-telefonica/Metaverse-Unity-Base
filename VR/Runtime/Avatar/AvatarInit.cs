@@ -48,7 +48,6 @@ namespace Meta.VR
 
             void GetAccessTokenComplete(Message<string> msg)
             {
-
                 if (String.IsNullOrEmpty(msg.Data))
                 {
                     promise.Reject(new Exception("Error on GetAccessTokenComplete"));
