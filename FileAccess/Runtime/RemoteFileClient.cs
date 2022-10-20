@@ -27,7 +27,7 @@ namespace Meta.FileAccess
                 .Then(response =>
                 {
                     DownloadHandlerTexture downloadHandlerTexture = (DownloadHandlerTexture)response.Request.downloadHandler;
-                    Texture texture = (Texture)downloadHandlerTexture.texture;
+                    Texture texture = downloadHandlerTexture.texture;
                     texture.name = new Uri(url).PathAndQuery;
                     promise.Resolve(texture);
                 }).Catch(promise.Reject);

@@ -30,9 +30,9 @@ namespace Meta.FileAccess
             SaveFile(fileName, bytes, OculusGalleryPath);
         }
 
-        public Promise<byte[]> LoadImageFromStreamingAssets(string fileName)
+        public Promise<byte[]> LoadImage(string basePath, string fileName)
         {
-            string path = Path.Combine(Application.streamingAssetsPath, fileName);
+            string path = Path.Combine(basePath, fileName);
             if (path.Contains("://") || path.Contains(":///")) // ? In case we're using Android streaming assets folder
             {
                 return MobileLoad(path);
@@ -41,6 +41,11 @@ namespace Meta.FileAccess
             {
                 return StandaloneLoad(path);
             }
+        }
+
+        public Promise<byte[]> LoadImageFromStreamingAssets(string fileName)
+        {
+            return LoadImage(Application.streamingAssetsPath, fileName);
         }
 
         private Promise<byte[]> MobileLoad(string path)
@@ -64,7 +69,6 @@ namespace Meta.FileAccess
             Timing.RunCoroutine(Routine());
             return promise;
         }
-
 
         private Promise<byte[]> StandaloneLoad(string path)
         {
